@@ -6,28 +6,41 @@
   "author": "Byeonghoon Yoo <bh322yoo@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "bootstrap": "^4.4.1",
+    "bootstrap-material-design": "^4.1.2",
     "jquery": "^3.4.1",
-    "pptxgenjs": "https://github.com/gitbrent/PptxGenJS#version-3.0"
+    "jszip": "^3.2.2",
+    "popper.js": "^1.16.0",
+    "pptxgenjs": "https://github.com/gitbrent/PptxGenJS#version-3.0",
+    "yarn": "^1.21.1"
   },
   "devDependencies": {
+    "@types/jquery": "^3.3.31",
+    "bootstrap": "^4.4.1",
+    "clean-webpack-plugin": "^3.0.0",
     "css-loader": "^3.4.0",
-    "file-loader": "^5.0.2",
     "gh-pages": "^2.1.1",
     "html-webpack-plugin": "^3.2.0",
+    "mini-css-extract-plugin": "^0.9.0",
+    "node-sass": "^4.13.0",
+    "precss": "^4.0.0",
     "pug": "^2.0.4",
     "pug-loader": "^2.4.0",
-    "style-loader": "^1.0.2",
+    "sass-loader": "^8.0.0",
+    "terser-webpack-plugin": "^2.3.1",
+    "ts-loader": "^6.2.1",
     "tslint": "^5.20.1",
     "typescript": "^3.7.3",
     "webpack": "^4.41.4",
-    "webpack-cli": "^3.3.10"
+    "webpack-cli": "^3.3.10",
+    "webpack-dev-server": "^3.10.1"
   },
   "homepage": "https://isac322/github.io/clic_automation",
   "scripts": {
     "build": "webpack --mode=production",
     "build:dev": "webpack --mode=development",
+    "build:none": "webpack --mode=none",
     "deploy": "gh-pages",
-    "start:dev": "webpack-dev-server --mode=development"
+    "start:dev": "webpack-dev-server --mode=development",
+    "start:none": "webpack-dev-server --mode=none"
   }
 }

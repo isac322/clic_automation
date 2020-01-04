@@ -1,1 +1,0 @@
-import 'pptxgenjs/dist/pptxgen.min'
